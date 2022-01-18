@@ -15,9 +15,9 @@ target_dir = "./Downloads"
 letter_count = 2
 number_count = 4
 
-def random_download(download_ammount, target_dir):
+def random_download(download_amount, target_dir):
     # Keep downloading until app is canceled
-    for ammount_to_download in range(download_ammount):
+    for amount_to_download in range(download_amount):
         imageId = ""
 
         # Create letters for Id
@@ -56,7 +56,7 @@ args = parser.parse_args()
 if args.dir:
     target_dir = args.dir
 
-if args.ammount:
-    random_download(int(args.ammount), target_dir)
+if args.amount:
+    random_download(int(args.amount), target_dir)
 else:
     print("Type -h or --help for instructions")
