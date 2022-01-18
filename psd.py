@@ -1,3 +1,4 @@
+#!/bin/python
 import sys
 
 from random_downloader import random_download
