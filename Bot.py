@@ -1,4 +1,4 @@
-from discord import *
+import discord
 from psd import *
 
 client = discord.Client()
@@ -11,9 +11,9 @@ async def on_ready():
 async def on_message(message):
     if message.content == ("./pic"):
         # get image link
-        image_link = get_random_link
+        image_link = get_random_link()
 
         # reply with  image link
-        await client.send_message(message.channel, image_link)
+        await message.channel.send(image_link)
 
 client.run('')

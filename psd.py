@@ -13,16 +13,14 @@ letter_count = 2
 number_count = 4
 
 def get_random_link():
-    # Keep downloading until app is canceled
-    for ammount_to_download in range(download_ammount):
-        imageId = ""
+    imageId = ""
 
-        # Create letters for Id
-        for i in range(letter_count):
-            imageId += random.choice(letter_sequence)
+    # Create letters for Id
+    for i in range(letter_count):
+        imageId += random.choice(letter_sequence)
 
-        # Create number for Id
-        for i in range(number_count):
-            imageId += random.choice(number_sequence)
+    # Create number for Id
+    for i in range(number_count):
+        imageId += random.choice(number_sequence)
 
-        return static_link + ImageId
+    return static_link + imageId
