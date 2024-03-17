@@ -9,19 +9,14 @@ import string
 static_link = "https://prnt.sc/"
 target_dir = "./Downloads"
 
-letter_count = 2
-number_count = 4
+url_size = 6
 
 def get_random_id():
     imageId = ""
 
     # Create letters for Id
-    for i in range(letter_count):
-        imageId += random.choice(string.ascii_lowercase)
-
-    # Create number for Id
-    for i in range(number_count):
-        imageId += str(random.randint(0, 9))
+    for i in range(url_size):
+        imageId += random.choice(string.ascii_lowercase + string.digits)
 
     return imageId
 
