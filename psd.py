@@ -57,7 +57,7 @@ def grab_image(id, target_dir, counter):
         return False
 
 parser = argparse.ArgumentParser(description="Download random screenshots from prnt.sc")
-parser.add_argument("amount", help="Set the amountof images you want to download")
+parser.add_argument("amount", help="Set the amount of images you want to download")
 parser.add_argument("-d", "--dir", help="Change download directory")
 args = parser.parse_args()
 
